@@ -1,3 +1,59 @@
+:root {
+  --color-bg: #FFFFA0;
+  --color-text-main: #000000;
+  --color-primary: #AFECE0;
+  --wrapper-height: 85vh;
+  --image-max-width: 320px;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+span {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  font-size: 50px;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 16ch;
+  animation: typing 2s steps(30),
+   blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+img {
+  border-radius: 5px 5px 5px 5px;
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes typing {
+  from { width: 0; }
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +70,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #8daed7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +82,42 @@
 
 .App-link {
   color: #61dafb;
+}
+
+p {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.Code { 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px; 
+  background-color: beige;
+  width: 70%;
+  color: black;
+  font-size: 3vw;
+}
+
+.Card { 
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px; 
+  width: 100%;
+}
+
+.Video { 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.Titulo { 
+  color: black;
+  margin-bottom: 0%;
+}
+
+.Recomendaciones { 
+  padding: 30px;
 }
 
 @keyframes App-logo-spin {
